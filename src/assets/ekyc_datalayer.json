@@ -1,0 +1,204 @@
+{
+
+"getotp":[{
+        "event" : "Get_OTP", 
+        "eventCategory": "Signup", 
+        "eventAction":"Continue with existing application",
+        "eventLabel":"Get OTP",
+        "leadid": "1"
+   }],
+
+   "getotpwrong":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 2: Wrong OTP", 
+    "eventAction":"Continue with existing application",
+    "eventLabel":"Get OTP",
+    "leadid": "1"
+}],
+"":[{
+  
+    "event" : "Signup_Clicks", 
+    "eventCategory": "eKYC", 
+    "eventAction":"Signup Click",
+    "eventLabel":"Signup",
+    "leadid": "1"
+}],
+"signup":[{
+  
+    "event" : "Signup_Clicks", 
+    "eventCategory": "eKYC", 
+    "eventAction":"Signup Click",
+    "eventLabel":"Signup",
+    "leadid": "1"
+}],
+"LeadSuccess":[{
+  
+    "event" : "LeadSuccess", 
+    "eventCategory": "Lead from {{source}}", 
+    "eventAction":"Lead Success",
+    "eventLabel":"Signup",
+    "is_lead": "true"
+}],
+"login":[{
+    "event" : "Get_OTP", 
+    "eventCategory": "Signup", 
+    "eventAction":"Continue with existing application",
+    "eventLabel":"Get OTP",
+    "leadid": "1"
+}],
+
+"pandetail":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 3: Enter Pan Card-DOB", 
+    "eventAction":"Enterred PAN number and DOB",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+
+}],
+"adddetail":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 3: Enter Pan Card-DOB", 
+    "eventAction":"Enterred PAN number and DOB",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+
+}],
+"uploadpan":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 3: Enter Pan Card-DOB", 
+    "eventAction":"Enterred PAN number and DOB",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+
+}],
+"signature":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 3: Enter Pan Card-DOB", 
+    "eventAction":"Enterred PAN number and DOB",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+
+}],
+"selfie":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 9: Selfie", 
+    "eventAction":"Added Selfie Image",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+    
+
+}],
+"address-proof":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 7: Enter Address Details", 
+    "eventAction":"Entered Address Details",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+
+}],
+"uploadaddress":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 6: Upload Address Proof", 
+    "eventAction":"Uploaded Address Proof",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+}],
+"bank-detail":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 10: Enter Bank Details", 
+    "eventAction":"Entered Bank Details",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+
+}],
+"derivatives":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 13: Activate Derivatives", 
+    "eventAction":"Checked Derivatives",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+
+}],
+"plan-detail":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 12: Plan Details", 
+    "eventAction":"Checked Plan Details",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+
+}],
+"esign":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 14: E-Sign", 
+    "eventAction":"e-Signed",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+
+}],
+"emailverify":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 11: Email Verification", 
+    "eventAction":"Verified Email ID",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+
+}],
+"resendotp":[{
+    "event" : "Resend_OTP", 
+    "eventCategory": "Resend OTP", 
+    "eventAction":"Clicked on Resend OTP",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+
+}],
+"startover":[{
+    "event" : "Cancel and Start Over", 
+    "eventCategory": "KYC Cancelled", 
+    "eventAction":"Clicked on Cancel and Start Over",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+}],
+"appstatus":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 15: KYC Completed", 
+    "eventAction":"KYC Succesfully Completed",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+}],
+"appstatusfail":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 15: KYC Completed", 
+    "eventAction":"KYC Failed",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+}],
+
+"enterotp":[{
+    "event" : "eKYC_Process", 
+    "eventCategory": "Step 2: Enter OTP", 
+    "eventAction":"Enterred OTP",
+    "eventLabel":"{{Page Path}}",
+    "leadid": "1"
+
+}],
+"camera1":[{
+    "event" : "CameraAllow", 
+    "eventCategory": "eKYC Process", 
+    "eventAction":"Allow Camera", 
+    "eventLabel":"Camera"
+    }],
+"camera2":[{
+    "event" : "CameraAllow", 
+    "eventCategory": "eKYC Process", 
+    "eventAction":"Deny Camera", 
+    "eventLabel":"Camera"
+    }],
+"capture":[{
+    "event" : "CaptureC", 
+    "eventCategory": "eKYC Process", 
+    "eventAction":"Click on Capture", 
+    "eventLabel":"Camera"
+    }]
+
+
+}

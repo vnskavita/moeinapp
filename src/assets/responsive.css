@@ -1,0 +1,152 @@
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+    .form_box{width:90% !important; }
+    .main_box{width:100%;}
+    
+}
+@media (max-width: 767px) {
+    .align-left{text-align: left !important;}
+    .pt0{padding-top:0px !important;}
+    .main_box{width:100%;}
+    body{background-color:#fff !important;}
+    .otp-input{
+        width: 12px;
+        height: 35px;
+        text-align: center !important;
+    }
+    .web-view{display: none;}
+    .mobile-view{display: block; width: 100%;}
+    .main_box{margin:0px !important;box-shadow: none !important; height:auto; border-radius: 0px !important; width: 100%!important;}
+    .title{font-size: 16px !important; 
+        text-align: left !important;
+        box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 20px 20px 0px 0px;}
+    .green_box p .fa{ font-size: 25px;
+     position: relative;
+     top: 5px;}
+     .green_box p {
+         display: inline;
+         margin-bottom: 0px;
+     }
+    button.back-btn{ margin:0px;}
+    button.next-btn{width:165px; float: right;margin-right: 0px;}
+    button.selfie-btn{ float:right; margin-right: 0px;}
+    .relative-box{position: relative;
+        top: -39px; background-color:  #f7fbfd;}
+    .gray-text{padding:0px 20px 20px  !important; text-align: left !important;} 
+    svg{width:25%;}
+   
+    .upload-box1{
+        margin:15px;
+    }
+    .gray-btn{font-size: 12px;}
+    .green_box p{
+        font-size: 13px;
+    }
+    i.fa-chevron-right{
+        width: 10px;
+        height: 16px;
+    }
+    .fixed-div{
+   position: fixed;
+   bottom:0px;
+   width:100%;
+   background-color: #fff;
+   max-width: 540px;
+   z-index: 999;
+   box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.1);
+    }
+   div.main_box{
+        padding-bottom: 75px;
+    }
+    .address-proof{margin:20px;}
+    .address-proof-form{padding:0px 0px;}
+    .address-proof-form .form-control{margin-bottom: 10px;}
+    .personal-details-form-area .form-group label{width:100%;}
+    .hello-txt .newline{display: block; padding-top:5px;}
+    .selfie .selfie-area .selfiecam-btn{width:100%;}
+    .selfie{padding: 0px 20px;}
+    .selfie .selfie-area{padding:20px;}
+    .display-block{display:block;}
+    .bank-detail-form .orange-text{padding:20px 0px; text-align: left;}
+    .fo-section {
+        padding: 0px 20px 20px 20px;
+        text-align: left;
+    }
+    .fo-section .gray-text {
+        padding: 0px 0px 20px 0px;}
+    .fo-section .income-proof .income-proof-center {
+           text-align: center !important;
+            width: 100% !important;}
+    .fo-section .income-proof .income-proof-center ul{margin-left: 0px !important;padding-left: 10px !important; }   
+    .income-proof .gray-btn {margin:0px; padding: 8px 20px;} 
+    .success-section {
+        padding: 20px;
+        text-align: left;
+    }  
+    .green_box{
+        box-shadow: none !important;
+        padding:7px !important;
+        width: 100% !important;
+        text-align: left !important;
+    }
+    .green_box .media{
+        width: 100% !important;
+        margin: 0px auto;
+    }
+    .green_box .fa {
+        font-size: 25px;
+        position: relative;
+        top: 5px;
+       
+    }
+    .pb-50{
+        padding-bottom: 50px !important;
+    }
+    .mb60{margin-bottom: 60px !important;}
+    .orange-text{padding:0px 20px 20px 20px; white-space: break-spaces;}
+    .card{margin:15px;}
+    .mt0{margin-top:0px;}
+    
+    
+}
+@media (max-width: 645px) {
+    
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 360px) {
+    button.selfie-btn{ float:right; margin-right: 0px; padding:10px 13px;font-size: 13px;
+    }
+    .green_box .media{
+        width: 100%;
+        margin: 0px auto;
+     }
+}
+@media only screen and (device-width: 768px) {
+    /* For general iPad layouts */
+  }
+  
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+    button.selfie-btn{ float:right; margin-right: 0px; padding:10px 13px;font-size: 13px;
+    }
+    .green_box .media{
+        width: 100%;
+        margin: 0px auto;
+     }
+
+  }
+  
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+    button.selfie-btn{ float:right; margin-right: 0px; padding:10px 13px;font-size: 13px;
+    }
+    .green_box .media{
+        width: 100%;
+        margin: 0px auto;
+     }
+
+  }

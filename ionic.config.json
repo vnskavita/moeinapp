@@ -1,0 +1,7 @@
+{
+  "name": "ionicswing",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

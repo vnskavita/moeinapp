@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "196978232665",
+    "project_id": "tradesmart-79277",
+    "storage_bucket": "tradesmart-79277.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196978232665:android:6a8edeb2bc6ed9dda79048",
+        "android_client_info": {
+          "package_name": "trade.smart.stock.options.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoP75FI77zOuVRVaovafx5ejMq18GL9_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,215 @@
+{
+    "Screenview": [
+      {
+        "event": "Screenview",
+        "eventCategory": "ScreenView",
+        "eventAction": "On Watchlist Screen",
+        "eventLabel": "Watchlist Screen",
+        "client_id": "1"
+      }
+    ],
+    "Choose_EQ": [
+      {
+        "event": "Choose_EQ",
+        "eventCategory": "Watchlist",
+        "eventAction": "Clicked on {{click_text}}",
+        "eventLabel": "{{filter_click_items}}",
+        "client_id": "1"
+      }
+    ],
+    "EqDropdown": [
+      {
+        "event": "EQ_Dropdown",
+        "eventCategory": "EQ Actions",
+        "eventAction": "Clicked on {{click_text}} for {{EQ_Name}}",
+        "eventLabel": "{{EQ_Name}}",
+        "client_id": "1"
+      }
+    ],
+    "ChartScreen": [
+      {
+        "event": "Chart_Screen",
+        "eventCategory": "Chart Screen for {{EQ_Name}}",
+        "eventAction": "Clicked on {{click_text}}",
+        "eventLabel": "{{EQName}}",
+        "client_id": "1"
+      }
+    ],
+    "placeorder": [
+      {
+        "event": "Buy_or_Sell_{{EQ}}",
+        "eventCategory": "Buy {{EQ}}",
+        "eventAction": "Clicked on {{EQ}} Buy",
+        "eventLabel": "{{options-selected}}",
+        "client_id": "1"
+      }
+    ],
+    "ordersuccess": [
+      {
+        "event": "Order_Successfull_Screen",
+        "eventCategory": "Order Succesful Screen",
+        "eventAction": "Clicked on {{EQ}} Buy",
+        "eventLabel": "{{options-selected}}",
+        "client_id": "1"
+      }
+    ],
+    "addfunds": [
+      {
+        "event": "Add_Funds",
+        "eventCategory": "Funds Page",
+        "eventAction": "Click on Add",
+        "eventLabel": "Add Funds",
+        "client_id": "1"
+      }
+    ],
+    "selectfunds": [
+      {
+        "event": "Add_Funds",
+        "eventCategory": "Funds Page",
+        "eventAction": "Selected {{click_text}}",
+        "eventLabel": "{{click_text}}",
+        "client_id": "1"
+      }
+    ],
+    "clickwithdrawfunds": [
+      {
+        "event": "Withdraw_Funds",
+        "eventCategory": "Funds Page",
+        "eventAction": "Clicked on Withdraw",
+        "eventLabel": "Withdraw Funds",
+        "client_id": "1"
+      }
+    ],
+    "withdrawfunds": [
+      {
+        "event": "Withdraw_Funds",
+        "eventCategory": "Funds Page",
+        "eventAction": "Selected {{click_text}}",
+        "eventLabel": "{{click_text}}",
+        "client_id": "1"
+      }
+    ],
+    "viewstatement": [
+      {
+        "event": "View_Statement_on_Funds_Screen",
+        "eventCategory": "Funds Page",
+        "eventAction": "Product Info And Care",
+        "eventLabel": "{{Product_name}}",
+        "client_id": "1"
+      }
+    ],
+    "fundspopup": [
+      {
+        "event": "View_Statement_on_Funds_Screen",
+        "eventCategory": "Funds Page",
+        "eventAction": "Product Info And Care",
+        "eventLabel": "{{View_Title}}",
+        "client_id": "1"
+      }
+    ],
+    "withdrawfundsscreen": [
+      {
+        "event": "Funds_Success_or_Failure_Popup",
+        "eventCategory": "Funds Page",
+        "eventAction": "withdraw funds {{popup_screen}}",
+        "eventLabel": "{{View_Title}}",
+        "client_id": "1"
+      }
+    ],
+    "sidenavigation": [
+      {
+        "event": "Side_navigation",
+        "eventCategory": "Navigation clicks",
+        "eventAction": "Move to Wishlist",
+        "eventLabel": "{{Product_name}}",
+        "client_id": "1"
+      }
+    ],
+    "clickshare": [
+      {
+        "event": "Referral",
+        "eventCategory": "Referral Page",
+        "eventAction": "Clicked on share for {{offer_title}}",
+        "eventLabel": "{{offer_title}}",
+        "client_id": "1"
+      }
+    ],
+    "shareonemail": [
+      {
+        "event": "Referral",
+        "eventCategory": "Referral Page",
+        "eventAction": "Shared on {{click text}}",
+        "eventLabel": "{{click text}} share",
+        "client_id": "1"
+      }
+    ],
+    "login": [
+      {
+        "event": "Login_Success",
+        "eventCategory": "Login Page",
+        "eventAction": "Logged In",
+        "eventLabel": "{{click text}}",
+        "client_id": "1"
+      }
+    ],
+    "loginfail": [
+      {
+        "event": "Login_fail",
+        "eventCategory": "Login Page",
+        "eventAction": "Logged fail",
+        "eventLabel": "{{click text}}",
+        "client_id": "1"
+      }
+    ],
+    
+    "signup": [
+      {
+        "event": "Signup",
+        "eventCategory": "Signup Page",
+        "eventAction": "Click on Signup",
+        "eventLabel": "{{click text}}",
+        "client_id": "1"
+      }
+      
+    ],
+    "leadsuccessapp": [
+      {
+        
+        "event": "LeadSuccessApp",
+        "eventCategory": "Lead from Mobile",
+        "eventAction": "Lead Success",
+        "eventLabel": "Signup",
+        "is_lead": "true"
+      }
+      
+    ],
+    "addfundsSuccess": [
+      {
+        "event": "Add_Funds",
+        "eventCategory": "Funds Page",
+        "eventAction": "Add funds",
+        "eventLabel": "Success",
+        "client_id": "1"
+      }
+    ],
+
+"addfundsFail": [
+      {
+        "event": "Add_Funds",
+        "eventCategory": "Funds Page",
+        "eventAction": "Add funds",
+        "eventLabel": "Fail",
+        "client_id": "1"
+      }
+    ],
+
+"withdrawfundsSuccess": [
+      {
+        "event": "withdrawFunds",
+        "eventCategory": "Funds Page",
+        "eventAction": "Withdraw funds",
+        "eventLabel": "Process",
+        "client_id": "1"
+      }
+    ]
+  }

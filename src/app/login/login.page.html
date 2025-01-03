@@ -1,0 +1,140 @@
+<ion-content *ngIf="loginFlag">
+  <form [formGroup]="loginForm" id="loginform" (ngSubmit)="login()" class="px-3 loginform">
+    <div *ngIf="errorMsg!=''" class="alert alert-danger" style="padding-left: 0;text-align: center;">
+      {{errorMsg}}
+    </div>
+    <div class="login-screen text-center pb-0">
+      <img src="../assets/images/ts-logo.png" class="center-img" alt="TradeSmart" />
+      <h2 class="font-18 font-weight-600 text-dark">
+        {{mobileNoFlag ? 'Login With Mobile Number' : 'Login with User ID'}}
+      </h2>
+
+    </div>
+    <div class="bdr-btm my-4"></div>
+    <div>
+      <div *ngIf="!mobileNoFlag">
+        <label class="mb-0">User ID</label>
+        <ion-item lines="none" class="itemform" [ngClass]="{'has-error': submitted  && f.uid.errors}">
+          <ion-input class="inputClass text-uppercase me-3" style="margin-right:26px;" #uid name="username"
+            minlength="1" maxlength="10" formControlName="uid" autocomplete="username" spellcheck="false"
+            placeholder="Enter User ID">
+            <ion-icon slot="start" name="person-sharp" aria-hidden="true" class="grey-txt-clr"></ion-icon>
+
+          </ion-input>
+        </ion-item>
+        <span class="error-ion-padding" *ngIf="submitted && f.uid.errors">
+          <span *ngIf="f.uid.errors.required">User ID is required</span>
+          <span *ngIf="!f.uid.errors.required && f.uid.errors?.minlength">Minimum 1 character required</span>
+          <span *ngIf="!(f.uid.errors.required || f.uid.errors?.minlength) && f.uid.errors?.maxlength">Maximum 10
+            characters allowed</span>
+          <span
+            *ngIf=" !(f.uid.errors.required || f.uid.errors?.minlength || f.uid.errors?.maxlength ) && f.uid.errors?.pattern">Please
+            enter valid User ID</span>
+          <span *ngIf="f.uid.errors?.serverError">{{ f.uid.errors?.serverError }}</span>
+        </span>
+        <div class="redirectLink"><span (click)="toggleLogin(true)">Login with Mobile Number</span></div>
+      </div>
+      <div *ngIf="mobileNoFlag">
+        <label class="mb-0">Mobile Number</label>
+        <ion-item lines="none" class="itemform" [ngClass]="{'has-error': submitted  && f.mobileno.errors}">
+          <ion-input #uid class="custom-placeholder inputClass text-uppercase me-3" style="margin-right:26px;" name="mobileno" maxlength="10"
+            onKeyPress="if(value.length==10) return false;" formControlName="mobileno" type="number"
+            placeholder="Enter Mobile Number">
+            <ion-icon slot="start" name="phone-portrait-sharp" aria-hidden="true" class="grey-txt-clr"></ion-icon>
+          </ion-input>
+        </ion-item>
+        <span class="error-ion-padding" *ngIf="submitted && f.mobileno.errors">
+          <span *ngIf="f.mobileno.errors.required">Mobile Number is required</span>
+          <span *ngIf="!f.mobileno.errors.required && f.mobileno.errors?.pattern">Please
+            enter valid Mobile Number</span>
+          <span *ngIf="f.mobileno.errors?.serverError">{{ f.mobileno.errors?.serverError }}</span>
+        </span>
+        <div class="redirectLink"><span (click)="toggleLogin(false)">Login with User ID</span></div>
+      </div>
+      <label class="mt-20 mb-0">Password</label>
+      <div style="position: relative;">
+        <ion-item lines="none" class="itemform" [ngClass]="{'has-error': submitted  && f.password.errors}">
+          <ion-input class="inputClass" minlength="6" autofocus="off" [clearOnEdit]="false"
+            autocomplete="current-password" autocapitalize="off" maxlength="12" name="current-password"
+            formControlName="password" [type]="showPassword ? 'text' : 'password'" placeholder="Enter Password">
+            <span class="toggle-password"><i class="fa" aria-hidden="true"></i></span>
+            <ion-icon slot="start" name="lock-closed" aria-hidden="true" class="grey-txt-clr"></ion-icon>
+          </ion-input>
+        </ion-item>
+        <span class="error-ion-padding" *ngIf="submitted && f.password.errors">
+          <span *ngIf="f.password.errors.required">Please enter your PASSWORD</span>
+          <span *ngIf="!f.password.errors.required && f.password.errors?.minlength">Please enter valid PASSWORD
+          </span>
+          <span
+            *ngIf="!(f.password.errors.required || f.password.errors?.minlength) && f.password.hasError('whitespace')">Space
+            not allowed</span>
+          <span *ngIf="!f.password.errors.required && f.password.errors?.serverError">{{
+            f.password.errors?.serverError }}</span>
+        </span>
+        <ion-icon class="eye grey-clr pwdtoggleicon" slot="end" [name]="showPassword ? 'eye-off' : 'eye'"
+          (click)="togglePassword()"></ion-icon>
+      </div>
+    </div>
+
+    <div class="sign-btn-sec">
+      <button type="submit" id="acct_migr" value="submit" class="btn green-btn w-100 text-white buy-btn-bg ripple">
+        <span>{{mobileNoFlag? 'Continue' :'Login'}}</span>
+      </button>
+
+
+      <div class="d-flex justify-content-center">
+        <div class="for-sec"><a class="frg-pass font-weight-400" (click)="unblock()">Unblock Account</a></div>
+        <span class="px-4">|</span>
+        <div class="for-sec"><a class="frg-pass font-weight-400" (click)="forgotPassword()">Forgot Password?</a>
+        </div>
+      </div>
+      <p class="sign-txt">
+        <span class="buy-txt-clr font-weight-400"><span (click)="pushtag()" alt="sign-up">Open a new Trading
+            Account</span></span>
+      </p>
+    </div>
+
+
+  </form>
+</ion-content>
+<div class="text-center font-12 grey-clr pb-3 mt-5" [hidden]="showMainContent">
+  <p>TradeSmart Fintech Securities Limited </p>
+  <p class="mb-2">(Formerly known as VNS Finance and Capital Services Limited)</p>
+  <p>VNS Broking Private Limited</p>
+  <div class="d-flex mt-2 justify-content-center">
+    <div>SEBI Reg No. Equity : </div>
+    <div> INZ000247736</div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div>SEBI Reg No. Commodity : </div>
+    <div> INZ000032132</div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div>CDSL Reg No. : </div>
+    <div> INDPCDSL2082003</div>
+  </div>
+</div>
+<!-- account migrate  -->
+<ion-modal id="acct_migr" #accountMigrate_modal class="d-none">
+  <ng-template>
+    <div class="d-flex justify-content-between bdr-btm pb-2 pt-3 px-3">
+      <p class="text-dark font-16 font-weight-500">Account migrated!</p>
+      <div (click)="closeAccModal()" class="text-end">
+        <img src="assets/images/close.svg" alt="close" />
+      </div>
+    </div>
+
+    <div class="p-3">
+      <div class="">
+        <div class="grey-txt-clr font-13">
+          Your account has been migrated/shifted to the old trading application. You may download the application here.
+        </div>
+      </div>
+      <div>
+        <button class="btn buy-btn-bg font-weight-600 ripple w-100 mt-3 text-white" type="button"><img
+            src="assets/images/btnlogo.png" class="text-white" alt="download app"> Download old app</button>
+      </div>
+    </div>
+  </ng-template>
+</ion-modal>
+<ion-loading #loadinglogin spinner="circles"></ion-loading>

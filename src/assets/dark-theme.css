@@ -1,0 +1,336 @@
+body{background: #151f35 !important;}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.eot');
+    src: url('fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Regular.woff2') format('woff2'),
+        url('fonts/Raleway-Regular.woff') format('woff'),
+        url('fonts/Raleway-Regular.ttf') format('truetype'),
+        url('fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/Oswald-Regular.eot');
+    src: url('fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Oswald-Regular.woff2') format('woff2'),
+        url('fonts/Oswald-Regular.woff') format('woff'),
+        url('fonts/Oswald-Regular.ttf') format('truetype'),
+        url('fonts/Oswald-Regular.svg#Oswald-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSans';
+    src: url('fonts/SourceSansPro-Regular.eot');
+    src: url('fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SourceSansPro-Regular.woff2') format('woff2'),
+        url('fonts/SourceSansPro-Regular.woff') format('woff'),
+        url('fonts/SourceSansPro-Regular.ttf') format('truetype'),
+        url('fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald-Light';
+    src: url('fonts/Oswald-Light.eot');
+    src: url('fonts/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Oswald-Light.woff2') format('woff2'),
+        url('fonts/Oswald-Light.woff') format('woff'),
+        url('fonts/Oswald-Light.ttf') format('truetype'),
+        url('fonts/Oswald-Light.svg#Oswald-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*# sourceMappingURL=bootstrap.css.map */
+.help-block{width:100%; float: left;}
+
+
+html{margin: 0; padding: 0;}
+body{float: left; width: 100%; margin: 0; padding: 0; font-family: 'Oswald', sans-serif;}
+
+/*********
+jquery validation css
+**********/
+label.error , .errorclass, .has-error .help-block{color:#E83937!important; padding-top: 5px; font-weight: normal; text-transform: capitalize; font-family: 'Oswald';}
+a{outline: none !important; text-decoration: none !important;}
+
+/*********
+common css
+**********/
+@font-face { font-family: 'password'; font-style: normal; font-weight: 400; src: url('fonts/passwordtxt/password.ttf'); }
+input.form-control.passtxt:focus, input.form-control.passtxt{font-family: 'password';}
+input.form-control.passtxt::-webkit-input-placeholder {font-family: 'Oswald';}
+input.form-control.passtxt::-moz-placeholder {font-family: 'Oswald';}
+input.form-control.passtxt:-ms-input-placeholder {font-family: 'Oswald';}
+input.form-control.passtxt:-moz-placeholder {font-family: 'Oswald';}
+.full{width:100%; float:left;}
+.center-img{display: block;margin: 0 auto;}
+.padd-img{padding: 42px 0;}
+.trading-form .form-rw{width:100%; position: relative;}
+.trading-form .form-rw .form-group{margin-bottom: 25px;transition: none;box-shadow: none; position: relative;}
+.trading-form .form-control{background: transparent;border: none;border-bottom: 1px solid #999999;border-radius: 0; font-family: 'Oswald';font-size: 15px; transition: none;box-shadow: none !important; outline:none !important; color: #999999; width: 100%;}
+.client-id-form{text-transform: uppercase;}
+.trading-form .green-btn, .trading-form .green-btn:hover{width:100%;background: #39B00E;  border:1px solid #39B00E; padding: 15px 30px; font-size: 16px; text-transform: uppercase; color: #faeed9; font-weight: 500; font-family: 'Oswald'; outline: 0 !important; cursor: pointer;}
+.btn.green-btn[disabled], .btn.green-btn.disabled{color: #faeed9; background: #b3b3b3; border-color: #b3b3b3;}
+.signup-txt,.signup-txt a{color: #39B00E;}
+.form-head{padding: 33px;text-align: center;}
+.form-title{margin: 0;font-size: 23px;color: #faeed9;font-family: 'Oswald';}
+.inner-title{color: #999999;font-size: 13px;font-family: 'Raleway';padding-top: 10px;}
+.inner-title-id{font-family: 'Oswald';font-size: 14px;font-weight: 600;}
+.inner-txt{font-size: 14px;color: #999999;font-family: 'Raleway';text-align: left;margin-top: 35px;}
+.txt-color{color: #39B00E;}
+.txt-caps{text-transform: uppercase;}
+.buy-txt{color: #39B00E;}
+.sell-txt{color: #E83937}
+.blue-txt{color: #3399ff;}
+.white-txt{color: #faeed9;}
+.grey-txt{color: #999999;}
+.add-btn-width{width: 100%;}
+.hand-cursor{cursor: pointer;}
+.btn-outline{background-color: transparent;text-transform: uppercase;}
+.btn-outline.btn:hover{background-color: transparent;text-transform: uppercase;}
+.btn-border-blue{border-color: #3399ff;}
+.btn-border-red{border-color: #E83937;}
+.btn-border-green{border-color: #39B00E;}
+.btn-border-grey{border-color:#999999; }
+.btn-border-white{border-color:#faeed9; }
+.btn-back-green{background-color: #37cdb1;text-transform: uppercase;}
+.common-ul{margin: 0;padding: 0;list-style: none;padding-top: 10px;text-align: center;display: table;}
+.common-ul li{display: table-cell;font-family: 'Oswald';width: 25%;padding: 0 10px; }
+/*.common-ul li:not(:first-child) {padding-left: 20px;}*/
+.innerdetail{display: none;padding-top: 20px;}
+.tab-col{padding: 0;text-transform: uppercase;}
+.center-txt{text-align: center;margin: 0 auto;}
+.center-txt thead tr th:nth-child(3){padding-right: 15px;text-align: right;}
+.tab-col td{padding-right: 15px;color: #999999;}
+.tab-divider{position:absolute; left:50%;top:10%; bottom:10%;border-left:1px solid white;}
+.content-bottom{padding-bottom: 30px;}
+.scrip-yes.content-padd{padding-top: 20px;padding-bottom: 0;}
+.content-padd{padding-top: 20px;padding-bottom: 100px;}
+.add-position{position: relative;}
+.add-border{clear: both;border-bottom: 1px dashed #999999;}
+.add-left-border{border-left: 0.5px solid #3a4151;}
+.add-btm-border{clear: both;border-bottom: 1px solid #3a4151;}
+.add-top-border{clear: both;border-top: 1px solid #3a4151;}
+.add-range-border{border-bottom: 1px solid #31394a;}
+*:focus {outline: none;}
+.pointer-cursor{cursor: pointer;}
+.separator{color: rgba(120, 120, 120, 0.62);padding: 0 10px;}
+.is-grouped {display: block;text-align: center;}
+.is-grouped > .btn:not(:last-child) {margin-right: 15px;}
+.add-margin{margin-left: 15px;}
+.add-top-margin{margin-top: 10px;margin-bottom: 10px;}
+.left-li input {caret-color : #39B00E;}
+.number-font{font-family: 'Oswald';font-size: 14px;}
+.btn[disabled],.btn.disabled{opacity: 1;color: #3a4151;}
+.select-btm-border{border-bottom: 1px solid #999999;}
+.toggle-password{position: absolute; top: 7px; right: 2px;}
+.toggle-password .fa-eye{font-size: 20px; color:#999999;}
+
+/*disable a tag*/
+.disabled { pointer-events: none; color: #3a4151;cursor: default;border: 1px solid #3a4151;}
+input::-webkit-input-placeholder{text-transform: uppercase;}
+input::-moz-placeholder {text-transform: uppercase;} /* firefox 19+ */
+input:-ms-input-placeholder {text-transform: uppercase;} /* ie */
+
+.pass-icon.block{display: block;}
+.red-txt.weak, .green-txt.strong{display: inline-block;}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {transition: background-color 5000s ease-in-out 0s; -webkit-text-fill-color: #999999 !important;}
+.pin-error-placement{width: 100%; float: left; left: 0;}
+.pin-error-placement1, .pin-error-placement2{width: 100%; text-align: center;}
+.pin-error-placement3{width: 100%; text-align: center;}
+#login_pin_2 .pin-error-placement1, #frgt_pin .pin-error-placement1{top:36px; position: absolute; text-align: left;}
+#frgt_pin .forget-rw{padding-top: 0; text-align: right;}
+#frgt_pin .frg-pass.resend-pin{font-size: 13px; letter-spacing: 1px; text-decoration: underline !important; text-align: right; cursor: pointer;}
+
+/*********
+header css
+**********/
+
+/*********
+SignIn Page css
+**********/
+
+.mob-div{display: block;}
+/*.mob-inner-div{background-image: url('../../images/dark-bg.png');background-repeat: no-repeat;background-position: center center;min-height: 123px;background-size: 100% 100%;}*/
+.login-section{padding: 0px 70px;}
+.login-section fieldset {position: relative;margin-top: 40px; margin-bottom: 40px;}
+.for-sec{float: right;}
+.forget-rw{width:100%; float:left; padding-bottom: 18px; padding-top: 10px;}
+.frg-pass,.frg-pass:hover{font-size: 14px;  font-family: 'Raleway'; color: #39B00E;font-weight: 600;text-decoration: none;}
+.sign-btn-sec{margin-top: 70px;float: left;width: 100%;}
+.sign-txt{font-size: 16px;color: #9b9b9b;text-align: center;margin-top: 25px;}
+.client-icon{float: right;position: absolute;right: 10px;top: 8px;color: #999999; display:none;}
+.speech-bubble {right:0;position: absolute;width: 233px;color: #FFFFFF;text-align: left;padding: 17px;background: #151f35;border-radius: 2px;border: #999999 solid 1px;top: 60px;display: block;margin: 0 auto;font-size: 15px; color: #999999;font-family:'SourceSans'; z-index: 2; }
+.login-section.setting-password .speech-bubble.pass-txt{right:0;}
+.speech-bubble:after {content: '';position: absolute;border-style: solid;border-width: 0 14px 10px;border-color: #151f35 transparent;display: block;width: 0;z-index: 1;top: -10px;left: 190px;}
+.speech-bubble:before {content: '';position: absolute;border-style: solid;border-width: 0 14px 10px;border-color: #999999 transparent;display: block;width: 0;z-index: 0;top: -11px;left: 190px;}
+.tooltip-div{display: none;}
+.close-bubble{color: #39B00E;width: 100%;text-align: right;display: block;margin-top: 20px;}
+.weak{color: #eb1227;}
+
+/*********
+PIn page css
+*********/
+.addnumberpad{color: #999999;height: 35px;-moz-appearance: textfield;-webkit-text-security: disc;-moz-text-security: disc;font-family: 'password';width: 20%;text-align: center;font-size: 2em;border: 1px solid #000;-webkit-appearance: none;appearance: none;background: transparent;border:0;border-bottom: 1px solid #999999;margin-left: 5%;}
+.addnumberpad:first-of-type{margin-left: 0px;}
+.addnumberpad::-webkit-outer-spin-button,.addnumberpad::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+.form-group .pinlabel{display: block;font-size: 15px;color: #999999;font-family: 'Oswald';font-weight: 400;}
+.trading-app-menu{background-image: url('images/top-inner-bg.png'); background-repeat: repeat;}
+.form-container{padding: 60px 30px 0;}
+input[type="number"].real-input {background-color: transparent; font-size: 16px;font-family: 'Oswald', sans-serif;}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0; /* <-- Apparently some margin are still there even though it's hidden */}
+input[type=number] {-moz-appearance:textfield; /* Firefox */}
+.text-white{color: #fff;}
+
+@keyframes lds-dual-ring {
+0% {
+-webkit-transform: rotate(0);
+transform: rotate(0);
+}
+100% {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+@-webkit-keyframes lds-dual-ring {
+0% {
+-webkit-transform: rotate(0);
+transform: rotate(0);
+}
+100% {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+
+.lds-css{
+width: 100%;
+height: 100%;
+margin: 0 auto;
+text-align: center;
+position: fixed; /* Sit on top of the page content */
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+cursor: pointer; /* Add a pointer on hover */
+}
+.lds-dual-ring {
+position: relative;
+top: 40%;
+}
+.lds-dual-ring div {
+position: absolute;
+width: 40px;
+height: 40px;
+top: 20px;
+left: 45%;
+border-radius: 50%;
+border: 3px solid #000;
+border-color: #39B00E transparent #39B00E transparent;
+-webkit-animation: lds-dual-ring 1s linear infinite;
+animation: lds-dual-ring 1s linear infinite;
+}
+.lds-dual-ring {
+margin: 0 auto;
+-webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
+
+
+/*********
+mobile footer css
+**********/
+.user-info-sec, .mobi-sec-footer{display: none;}
+.mobi-sec-footer .mobi-foot-name{font-family: 'Oswald', sans-serif; font-size: 14px;  text-transform: uppercase;}
+.mobi-sec-footer ul{list-style: none; padding: 0; position: fixed; width: 100%; bottom: 0; left: 0; background-color: #151f35; margin: 0;  -moz-box-shadow: 0px -10px 45px rgba(128, 117, 117, 0.34); box-shadow: 0px -10px 45px rgba(128, 117, 117, 0.34); -webkit-box-shadow: 0px -10px 45px rgba(128, 117, 117, 0.34);}
+.mobi-sec-footer ul li{width:20%; float: left;}
+.mobi-sec-footer ul li a{margin: 0; width: 100%; text-align: center; padding: 15px 10px; float: left; color: #676e7c; cursor: pointer;}
+.mobi-sec-footer ul li a.active{color:#faeed9;}
+.mobi-sec-footer .mobi-foot-image{display: block; width: 20px; height:20px; margin: 0 auto 5px; background-position: center center; background-repeat: no-repeat; background-size: 100% 100%;}
+.mobi-sec-footer .mobi-foot-scrips{display: block;width: 35px;height: 35px;margin: 0 auto 5px;background-color: #39B00E;border-radius: 10px;}
+.mobi-sec-footer .mobi-foot-scrips i{margin-top: 6px;}
+/* .mobi-sec-footer ul li a:hover .mobi-foot-image.watch-lst-image, .mobi-sec-footer ul li a.active .mobi-foot-image.watch-lst-image{background-image: url('../../images/clock-active.png');}
+.mobi-sec-footer ul li a:hover .mobi-foot-image.port-lst-image, .mobi-sec-footer ul li a.active .mobi-foot-image.port-lst-image{background-image: url('../../images/bag-active.png');}
+.mobi-sec-footer ul li a:hover .mobi-foot-image.orders-lst-image, .mobi-sec-footer ul li a.active .mobi-foot-image.orders-lst-image{background-image: url('../../images/order-active.png');}
+.mobi-sec-footer ul li a:hover .mobi-foot-image.fund-lst-image, .mobi-sec-footer ul li a.active .mobi-foot-image.fund-lst-image{background-image: url('../../images/fund-active.png');}
+.mobi-sec-footer .mobi-foot-image.watch-lst-image{background-image: url('../../images/clock.png');}
+.mobi-sec-footer .mobi-foot-image.port-lst-image{background-image: url('../../images/bag.png');}
+.mobi-sec-footer .mobi-foot-image.orders-lst-image{background-image: url('../../images/order.png');}
+.mobi-sec-footer .mobi-foot-image.fund-lst-image{background-image: url('../../images/fund.png');} */
+header{position: relative;}
+.mobile-menu-inner{padding: 30px 0; width:100%; float: left;}
+.menu .menu-inner{padding:15px; margin: 0; list-style: none; text-align: left; text-transform: uppercase; width:100%; float: left; padding-right: 0;}
+/* .mobile-menu-inner{background-image: url('../../images/mobi-menu-bg.png'); background-size: contain; background-repeat: no-repeat; background-position: left bottom;} */
+.menu .menu-inner li a{color: #999999; padding: 15px; text-transform: uppercase; font-size: 14px; float: left; width:100%; font-family: 'Oswald', sans-serif; cursor:pointer;}
+.menu .menu-inner li a.active{color: #faeed9;}
+.user-name{float: left; width:100%; text-align:center; font-family: 'Raleway', sans-serif; margin-bottom: 15px; color: #999999;}
+.user-info-sec{width:100%; float: left; padding: 25px 0; border-bottom: 1px dashed #999999;}
+.user-id{font-size: 16px; color:#faeed9; font-family: 'Oswald', sans-serif;}
+.log-out-sec a{text-align: left; border-top: 1px solid #999999; padding: 50px 30px 70px;}
+.log-out-sec .log-link{color: #E83937; text-align: left; text-transform: uppercase; font-size: 16px; font-weight: 500; width:100%; float: left;}
+.copyright-sec p{margin: 0; text-align:center; padding: 20px 0 0; color: #999999;}
+.market-watch-sec{list-style: none; padding: 0; margin: 0; float: right;}
+.market-watch-sec li{display: inline-block; padding: 0 15px;}
+.market-watch-sec li a.disabled{color: transparent; border: 1px solid transparent;}
+.market-watch-sec li a.disabled i{color: #3a4151;}
+.menu-toggle-btn-sec{float: left; width: auto; position: relative;}
+.menu-toggle-btn-sec .page-name{font-size: 14px; font-family: 'Oswald', sans-serif; text-transform: uppercase; color: #faeed9;}
+.mobile-header-bar{padding: 12px 0;}
+.menu-toggle-btn{margin-right: 10px;cursor: pointer;padding: 5px 0;display: inline-block;vertical-align: middle;}
+.nifty-rw{clear: both; border-top: 1px dashed #999999;}
+.nifty-col{width:50%; float: left; text-align: left; padding: 0 15px; margin-top: 12px;}
+.market-watch-sec-rw{padding-bottom: 15px;}
+.nifty-title{color:#999999; font-family: 'Oswald-Light', sans-serif; font-weight: 600;letter-spacing: 1px;}
+.nifty-col p{font-size: 18px; color: #37cdb1;  font-family: 'Oswald', sans-serif;  margin: 0;}
+.nifty-col p span.BANK-Nifty-if-prc{font-size: 14px; color: #37cdb1;  font-family: 'Oswald', sans-serif;  margin: 0;}
+.nifty-col p span.CNX-Nifty-if-prc{font-size: 14px; color: #37cdb1;  font-family: 'Oswald', sans-serif;  margin: 0;}
+.nifty-col.nifty-bank-col p{color: #E83937;}
+.nifty-col p span{font-size: 14px;}
+.nifty-feeds span{display: table-cell;}
+/* .trading-app-menu{background-image: url('../../images/top-inner-bg.png'); background-repeat: repeat;} */
+.overlay {width: 100%; height: 100vh; position: absolute; left: 0; background: rgba(0,0,0,0.7); z-index: 1; display: none;top: 0;}
+.scripsoverlay {width: 100%; height: 100vh; position: absolute; left: 0; background: rgba(0,0,0,0.7); z-index: 1; display: none;top: 0;}
+.log-overlay{position:fixed;width: 100%; height: 100%; left: 0; background: rgba(0,0,0,0.08); z-index: 1; display: none;top: 0;}
+.menu_arrow{padding-left: 13px;position: absolute;top: -2px;right: -22px;cursor: pointer;}
+.menu_up_arrow{display: block;margin: 0 auto;cursor: pointer;}
+
+
+/*mobile menu*/
+.mobile-menu{float: left; height: 100%; background: #151f34; z-index: 999; left: -100%; transition: 0.01s; -webkit-transition: 0.2s; border-color: #fff; position: fixed; width: 70%; display: block; top: 0; text-align: center; overflow-y:auto; margin: 0 -15px;}
+.mobile-menu-inner{display: block;}
+.menu.mobile-menu{left:0;}
+
+/*Custom menu*/
+.bar1, .bar2, .bar3 {width: 20px;height: 3px;background-color: #37cdb1;margin: 4px 0;transition: 0.4s;border-radius: 5px;}
+.bar1.add-memu-margin,.bar3.add-memu-margin{margin: 0 6px;}
+
+/*********
+2FA css
+**********/
+.form-sec-inner {padding: 60px 0 20px 0;}
+.form-rw .form-group.password-margin-sec {
+    margin-top: 30px;
+}
+
+ /*********************
+ cs select css
+ **********************/
+ .cs-select { display: inline-block; vertical-align: middle; position: relative; text-align: left; background: #fff; z-index: 100; width: 100%; max-width: 500px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } div.cs-select:focus { outline: none; /* For better accessibility add a style for this in your skin */ } .cs-select select { display: none; } .cs-select span { display: block; position: relative; cursor: pointer; padding: 1em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: right; } /* Placeholder and selected option */ .cs-select > span { padding-right: 2.5em; } .cs-select > span::after, .cs-select .cs-selected span::after { speak: none; position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; } .cs-select > span::after { content: '\25BE'; right: 5px; }  .cs-select .cs-selected span::after { content: '\2713'; margin-left: 1em; } .cs-select.cs-active > span::after { -webkit-transform: translateY(-50%) rotate(180deg); transform: translateY(-50%) rotate(180deg); z-index: 5; }  div.cs-active { z-index: 200; } /* Options */ .cs-select .cs-options { position: absolute; overflow: hidden; width: 100%; background: #151f35; visibility: hidden; border:1px solid #999999; border-radius: 10px; } .cs-select.cs-active .cs-options { visibility: visible; } .cs-select ul { list-style: none; margin: 0; padding: 0; width: 100%; } .cs-select ul span { padding: 1em; } .cs-select ul li.cs-focus span { background-color: #ddd; } /* Optgroup and optgroup label */ .cs-select li.cs-optgroup ul { padding-left: 1em; } .cs-select li.cs-optgroup > span { cursor: default; }
+
+ /*********************
+ cs skin css
+ **********************/
+ @font-face {font-family: 'FontAwesome';src: url('../../fonts/fontawesome-webfont.eot?v=4.7.0');src: url('../../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight: normal;font-style: normal;}.cs-skin-border {background: transparent;font-size: 14px;font-family: 'Oswald';max-width: 600px;color: #faeed9;text-transform: uppercase;}@media screen and (min-width: 480px) {.cs-select .cs-options {width: 70%;right: 0;}}.cs-skin-border > span::after,.cs-skin-border .cs-selected span::after {font-family: 'Fontawesome';content: '\f0d7'; font-size: 18px;}.cs-skin-border ul span::after {content: '';opacity: 0;}.cs-skin-border.cs-active > span {background: #151f35;border-color: #151f35;color: #faeed9;}.cs-skin-border .cs-options {color: #faeed9;font-size: 13px;opacity: 0;-webkit-transition: opacity 0.2s, visibility 0s 0.2s;transition: opacity 0.2s, visibility 0s 0.2s;font-family: 'Oswald';top: 5px;}.cs-skin-border.cs-active .cs-options {opacity: 1;-webkit-transition: opacity 0.2s;transition: opacity 0.2s;}.cs-skin-border ul span {padding: 8px 34px 10px 14px;-webkit-backface-visibility: hidden;backface-visibility: hidden;}.cs-skin-border .cs-options li span:hover, .cs-skin-border li.cs-focus span {background: #151f35;}

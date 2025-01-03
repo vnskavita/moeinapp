@@ -1,0 +1,12 @@
+{
+    "android": {
+        
+        "release": {
+            "keystore": "/TradesmartonlineMF.keystore",
+            "storePassword": "vns@123",
+            "alias": "tradesmart",
+            "password" : "vns@123",
+            "keystoreType": "jks"
+        }
+    }
+}
